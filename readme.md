@@ -12,5 +12,8 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black&labelColor=fff300&color=fff300)
 
 
-![Estatísticas do repositório](https://github-readme-stats.vercel.app/api/pin/?username=Lorran-Matheus&repo=praticando-com-jogos)
+## Estatísticas
+
+![Estatísticas do repositório](https://github-readme-stats.vercel.app/api/pin/?username=Lorran-Matheus&repo=praticando-com-jogos&theme=radical)
+
 

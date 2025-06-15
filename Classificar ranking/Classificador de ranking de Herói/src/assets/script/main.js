@@ -1,4 +1,7 @@
-const { tempoDeJogo } = require('./userDetails');
+import { tempoDeJogo } from './userDetails.js';
+
+let message = document.getElementById("header")
+message.innerHTML = "Testando"
 
 let states = {
     view: {

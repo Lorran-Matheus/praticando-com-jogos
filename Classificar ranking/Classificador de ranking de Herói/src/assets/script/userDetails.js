@@ -18,4 +18,4 @@ function tempoDeJogo() {
     console.log("")
 }
 
-module.exports = {tempoDeJogo}
+export {tempoDeJogo};

@@ -12,6 +12,7 @@ let states = {
     }
 }
 
+
 function ranking(rank) {
     if (rank <= 1000) {
     states.values.currentRank = "Ferro";

@@ -29,5 +29,31 @@ for (let i = 0; i< emojis.length; i++){
 }
 
 function handleClick() {
-    alert("salve")
+    if (openCards.length < 2) {
+        this.classList.add("boxOpen");
+        openCards.push(this);
+    }
+
+    if (openCards.length == 2) {
+        setTimeout(checkMacth, 600);
+    }
+    
+    console.log(openCards)
+
+}
+
+function checkMacth() {
+    if (openCards[0].innerHTML === openCards[1].innerHTML) {
+        openCards[0].classList.add("boxMatch");
+        openCards[1].classList.add("boxMatch");
+    } else {
+        openCards[0].classList.remove("boxOpen");
+        openCards[1].classList.remove("boxOpen");
+    }
+
+    openCards = [];
+
+    if(document.querySelectorAll(".boxMatch").length === emojis.length) {
+        alert("Você venceu !")
+    }
 }

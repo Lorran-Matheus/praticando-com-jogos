@@ -50,7 +50,6 @@ h2 {
 }
 
 .game {
-    border: 1px solid red;
     width: 26.87rem;
     height: 26.87rem;
     
@@ -79,10 +78,19 @@ h2 {
 .item::after{
     content: "";
     position: absolute;
-    opacity: .8;
+    /* opacity: .8; */
     inset: 0;
     background: #404040;
     transition: 0.25s;
     transform: rotateY(0deg);
     backface-visibility: hidden;
+}
+
+.item.boxOpen {
+    transform: rotateY(0deg);
+}
+
+.boxOpen::after,
+.boxMatch::after{
+    transform: rotateY(180deg);
 }

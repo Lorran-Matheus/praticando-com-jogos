@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/src/assets/favicon/Favicon.ico" type="image/x-icon">
     <!-- main css -->
     <link rel="stylesheet" href="/src/style/main.css">
     <!-- reset css -->
@@ -15,6 +17,9 @@
 </head>
 
 <body>
+    <audio id="bgm" loop>
+        <source src="/src/assets/audios/egyptian_duel.mp3" type="audio/mp3" volume=".1">
+    </audio>
     <div class="bg-video">
         <video class="video" autoplay loop muted>
             <source src="/src/assets/video/yugi.mp4" type="video/mp4">
@@ -32,18 +37,18 @@
             </div>
             <div class="card_details frame">
                 <p id="card-name">
-                    a
+                    Select 
                 </p>
                 <p id="card-type">
-                    a
+                    a card
                 </p>
             </div>
 
         </div>
 
         <div class="container__right">
-            <div class="card-box__container" id="computer-cards">
-                <div class="card-box framed">
+            <div class="card-box__container">
+                <div class="card-box framed" id="computer-cards">
 
                 </div>
 
@@ -63,7 +68,7 @@
                     <div class="versus-bottom">
                         <button 
                         id="next-duel" class="rpgui-button"
-                        onclick="resetDuel()">GANHOU</button>
+                        onclick="resetDuel()">Win</button>
                     </div>
                 </div>
                 
@@ -74,7 +79,7 @@
         </div>
     </div>
 
-    <script src="/src/assets/scripts/engine.js"></script>
+    <script src="/src/scripts/engine.js"></script>
 </body>
 
 </html>

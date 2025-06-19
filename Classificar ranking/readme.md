@@ -1,38 +1,33 @@
-# 1️⃣ Desafio Classificador de nível de Herói
+# Hero Rank Stats
 
-**O Que deve ser utilizado**
+Um pequeno projeto em **JavaScript puro (ES Modules)** que simula um sistema de **ranqueamento de heróis**, com cálculo de tempo de jogo e exibição do progresso no console.
 
-- Variáveis
-- Operadores
-- Laços de repetição
-- Estruturas de decisões
+## Funcionalidades
 
-## Objetivo
+- Define um herói com nome e pontuação.
+- Classifica o herói com base na pontuação total:
+    - >  Ferro, Bronze, Prata, Ouro, Platina, Ascendente, Imortal ou Radiante.
+- Calcula o tempo total gasto em partidas, baseado no número de partidas e na duração média de cada uma.
+- Exibe todas as informações no console.
 
-Criar uma variável dinâmica para armazenar o nome e a quantidade de experiência (XP) de um herói, depois utilize uma estrutura de decisão para apresentar alguma das mensagens abaixo:
+## Lógica
 
-### Entrada
+- O rank é determinado pela função `ranking()`, com base no valor de `states.values.rank`.
+- A função `tempoDeJogo()` calcula o tempo total com base nas partidas jogadas (`totalDePartidas`) e o tempo por partida (`tempoPartidas`).
+- A função `printText()` exibe a mensagem:  
 
-Se XP for menor do que 1.000 = ***Ferro***
+##  Exemplo console
 
-Se XP for entre 1.001 e 2.000 = ***Bronze***
+### Input:
+`heroName: "BatuskE"`
 
-Se XP for entre 2.001 e 3.000 = ***Prata***
+`rank: 11001`
 
-Se XP for entre 3.001 e 4.000 = ***Ouro***
+`currentRank: ""` 
 
-Se XP for entre 4.001 e 6.000 = ***Platina***
+### Output:
 
-Se XP for entre 6.001 e 9.000 = ***Ascendente***
-
-Se XP for entre 9.001 e 12.000 = ***Imortal***
-
-Se XP for maior ou igual a 12.001 = ***Radiante***
-#
-### Saída
-
-Ao final deve se exibir uma mensagem:
-
-"O Herói de nome **{nome}** está no rank **{rank}**"
-
- 
+```bash
+> O Herói BatuskE está no rank Imortal
+> Você jogou um total de 3945 partidas.
+> Seu tempo em partida foi de 19725 minutos, ou 328.75 horas
